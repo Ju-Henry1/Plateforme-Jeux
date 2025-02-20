@@ -42,7 +42,7 @@ h1 {
 /* 🎨 Grille des couleurs */
 #colorBoxes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* ✅ Ajuste les colonnes dynamiquement */
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* ✅ S'adapte automatiquement */
     gap: 10px;
     justify-content: center;
     width: 100%;
@@ -52,8 +52,8 @@ h1 {
 
 /* 📏 Boutons de couleur */
 .color-box {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    aspect-ratio: 1; /* ✅ Toujours carré */
     border-radius: 10px;
     opacity: 0.7;
     cursor: pointer;
@@ -98,7 +98,7 @@ button:hover {
     color: #F44336; /* Rouge */
 }
 
-/* 📱 MEDIA QUERIES : Adaptation Mobile */
+/* 📱 MOBILE : Ajustement à 2 colonnes */
 @media (max-width: 500px) {
     h1 {
         font-size: 1.5em;
@@ -109,12 +109,8 @@ button:hover {
     }
 
     #colorBoxes {
-        grid-template-columns: repeat(2, 1fr); /* 🔥 Passe à 2 colonnes sur mobile */
-    }
-
-    .color-box {
-        width: 80px;
-        height: 80px;
+        grid-template-columns: repeat(3, 1fr); /* ✅ Fixe 2 colonnes sur mobile */
+        max-width: 250px;
     }
 
     button {
@@ -123,15 +119,10 @@ button:hover {
     }
 }
 
-/* 🖥 Grand écran : Ajustement à 3-4 colonnes */
+/* 🖥 GRAND ÉCRAN : Ajustement à 4 colonnes */
 @media (min-width: 768px) {
     #colorBoxes {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* ✅ Répartition fluide */
+        grid-template-columns: repeat(3, 1fr); /* ✅ Fixe 4 colonnes sur PC */
         max-width: 450px;
-    }
-
-    .color-box {
-        width: 120px;
-        height: 120px;
     }
 }
