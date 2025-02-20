@@ -1,88 +1,103 @@
+/* 🌟 Styles généraux */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Dégradé de fond */
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    text-align: center;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
 }
 
+/* 📦 Conteneur principal */
 .container {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    width: 400px;
-}
-
-h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-#score-board {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-#score, #round {
-    font-weight: bold;
-    color: #4CAF50;
-}
-
-#colorBoxes {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.color-box {
-    width: 100px;
-    height: 100px;
-    margin: 15px;
+    background: white;
+    padding: 20px;
     border-radius: 10px;
-    opacity: 0.6;
-    cursor: pointer;
-    transition: opacity 0.3s, transform 0.2s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box;
 }
 
-.color-box:hover {
-    opacity: 1;
+/* 🏆 Titre et message */
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#message {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* 🎨 Grille des couleurs */
+.grid {
+    display: grid;
+    gap: 10px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* 📏 Taille des boutons couleur */
+.color-btn {
+    width: 100%;
+    padding-top: 100%; /* Pour un format carré */
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.color-btn:hover {
     transform: scale(1.1);
 }
 
+/* 🎮 Boutons d'actions */
 button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #28a745;
     color: white;
-    font-size: 16px;
-    cursor: pointer;
+    padding: 12px;
+    font-size: 1.2em;
     border: none;
+    cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    width: 100%;
+    margin: 10px 0;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #218838;
 }
 
-#statusMessage {
-    margin-top: 20px;
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #333;
+/* 📱 MEDIA QUERIES : Adaptation Mobile */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #message {
+        font-size: 1em;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur mobile */
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px;
+    }
 }
 
-#statusMessage.correct {
-    color: #4CAF50; /* Vert pour la bonne réponse */
-}
-
-#statusMessage.incorrect {
-    color: #F44336; /* Rouge pour une mauvaise réponse */
+/* 🖥️ Grand écran : 4 colonnes */
+@media (min-width: 501px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
