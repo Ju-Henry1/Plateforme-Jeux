@@ -1,0 +1,203 @@
+[
+    {
+        "question": "Tu préfères avoir la capacité de voler ou d'être invisible ?",
+        "option1": "Voler",
+        "option2": "Être invisible"
+    },
+    {
+        "question": "Tu préfères ne plus jamais avoir faim ou ne plus jamais être fatigué ?",
+        "option1": "Ne plus avoir faim",
+        "option2": "Ne plus être fatigué"
+    },
+    {
+        "question": "Tu préfères vivre sans musique ou sans films ?",
+        "option1": "Sans musique",
+        "option2": "Sans films"
+    },
+    {
+        "question": "Tu préfères être riche mais malheureux ou pauvre mais heureux ?",
+        "option1": "Riche mais malheureux",
+        "option2": "Pauvre mais heureux"
+    },
+    {
+        "question": "Tu préfères avoir 10 chats ou 10 chiens ?",
+        "option1": "10 chats",
+        "option2": "10 chiens"
+    },
+    {
+        "question": "Tu préfères ne plus jamais pouvoir parler ou ne plus jamais pouvoir écrire ?",
+        "option1": "Ne plus parler",
+        "option2": "Ne plus écrire"
+    },
+    {
+        "question": "Tu préfères avoir une mémoire parfaite ou pouvoir apprendre 10x plus vite ?",
+        "option1": "Mémoire parfaite",
+        "option2": "Apprentissage 10x plus rapide"
+    },
+    {
+        "question": "Tu préfères voyager dans le passé ou dans le futur ?",
+        "option1": "Voyager dans le passé",
+        "option2": "Voyager dans le futur"
+    },
+    {
+        "question": "Tu préfères être immortel mais seul ou vivre une vie normale avec tes proches ?",
+        "option1": "Immortel mais seul",
+        "option2": "Vie normale avec proches"
+    },
+    {
+        "question": "Tu préfères ne plus jamais manger de chocolat ou ne plus jamais boire de soda ?",
+        "option1": "Plus de chocolat",
+        "option2": "Plus de soda"
+    },
+    {
+        "question": "Tu préfères ne plus jamais utiliser internet ou ne plus jamais regarder la télévision ?",
+        "option1": "Plus d'internet",
+        "option2": "Plus de télévision"
+    },
+    {
+        "question": "Tu préfères parler toutes les langues du monde ou pouvoir parler aux animaux ?",
+        "option1": "Toutes les langues du monde",
+        "option2": "Parler aux animaux"
+    },
+    {
+        "question": "Tu préfères vivre seul dans une maison immense ou avec 10 amis dans un petit appartement ?",
+        "option1": "Seul dans une maison immense",
+        "option2": "Avec 10 amis dans un petit appartement"
+    },
+    {
+        "question": "Tu préfères ne jamais être fatigué ou ne jamais avoir faim ?",
+        "option1": "Ne jamais être fatigué",
+        "option2": "Ne jamais avoir faim"
+    },
+    {
+        "question": "Tu préfères vivre dans un monde sans guerre mais sans liberté ou un monde libre mais avec des conflits ?",
+        "option1": "Sans guerre mais sans liberté",
+        "option2": "Libre mais avec des conflits"
+    },
+    {
+        "question": "Tu préfères être célèbre mais détesté ou inconnu mais aimé de tous ceux que tu connais ?",
+        "option1": "Célèbre mais détesté",
+        "option2": "Inconnu mais aimé"
+    },
+    {
+        "question": "Tu préfères pouvoir contrôler le temps ou contrôler les esprits ?",
+        "option1": "Contrôler le temps",
+        "option2": "Contrôler les esprits"
+    },
+    {
+        "question": "Tu préfères perdre tous tes souvenirs passés ou ne plus jamais pouvoir en créer de nouveaux ?",
+        "option1": "Perdre mes souvenirs",
+        "option2": "Ne plus en créer de nouveaux"
+    },
+    {
+        "question": "Tu préfères être 10% plus intelligent ou 50% plus fort ?",
+        "option1": "10% plus intelligent",
+        "option2": "50% plus fort"
+    },
+    {
+        "question": "Tu préfères vivre dans une ville futuriste high-tech ou dans une cabane en pleine nature ?",
+        "option1": "Ville futuriste",
+        "option2": "Cabane en pleine nature"
+    },
+    {
+        "question": "Tu préfères avoir un clone de toi ou pouvoir te téléporter où tu veux ?",
+        "option1": "Avoir un clone",
+        "option2": "Pouvoir me téléporter"
+    },
+    {
+        "question": "Tu préfères vivre 200 ans en étant en bonne santé ou vivre 80 ans avec une vie incroyable ?",
+        "option1": "200 ans en bonne santé",
+        "option2": "80 ans avec une vie incroyable"
+    },
+    {
+        "question": "Tu préfères être toujours en avance ou toujours en retard ?",
+        "option1": "Toujours en avance",
+        "option2": "Toujours en retard"
+    },
+    {
+        "question": "Tu préfères pouvoir respirer sous l'eau ou voler ?",
+        "option1": "Respirer sous l'eau",
+        "option2": "Voler"
+    },
+    {
+        "question": "Tu préfères être le plus drôle ou le plus intelligent de ton entourage ?",
+        "option1": "Le plus drôle",
+        "option2": "Le plus intelligent"
+    },
+    {
+        "question": "Tu préfères ne jamais avoir besoin de dormir ou ne jamais avoir besoin de manger ?",
+        "option1": "Ne jamais dormir",
+        "option2": "Ne jamais manger"
+    },
+    {
+        "question": "Tu préfères avoir une super mémoire ou pouvoir oublier tout ce que tu veux ?",
+        "option1": "Super mémoire",
+        "option2": "Pouvoir oublier"
+    },
+    {
+        "question": "Tu préfères vivre dans un jeu vidéo ou dans un film ?",
+        "option1": "Dans un jeu vidéo",
+        "option2": "Dans un film"
+    },
+    {
+        "question": "Tu préfères être extrêmement riche mais seul ou pauvre mais avec des amis fidèles ?",
+        "option1": "Extrêmement riche mais seul",
+        "option2": "Pauvre avec des amis fidèles"
+    },
+    {
+        "question": "Tu préfères avoir des super-pouvoirs mais être poursuivi par le gouvernement ou être normal et tranquille ?",
+        "option1": "Avoir des super-pouvoirs mais être traqué",
+        "option2": "Être normal et tranquille"
+    },
+    {
+        "question": "Tu préfères être dans un monde sans musique ou sans livres ?",
+        "option1": "Sans musique",
+        "option2": "Sans livres"
+    },
+    {
+        "question": "Tu préfères être bloqué dans un film d'horreur ou un film d'action ?",
+        "option1": "Film d'horreur",
+        "option2": "Film d'action"
+    },
+    {
+        "question": "Tu préfères avoir un travail de rêve mais être surmené ou un travail ennuyeux mais relaxant ?",
+        "option1": "Travail de rêve mais stressant",
+        "option2": "Travail ennuyeux mais relax"
+    },
+    {
+        "question": "Tu préfères pouvoir voir l’avenir ou changer le passé ?",
+        "option1": "Voir l'avenir",
+        "option2": "Changer le passé"
+    },
+    {
+        "question": "Tu préfères vivre une apocalypse zombie ou une invasion extraterrestre ?",
+        "option1": "Apocalypse zombie",
+        "option2": "Invasion extraterrestre"
+    },
+    {
+        "question": "Tu préfères avoir un bouton 'Pause' ou un bouton 'Rewind' dans la vraie vie ?",
+        "option1": "Bouton Pause",
+        "option2": "Bouton Rewind"
+    },
+    {
+        "question": "Tu préfères toujours devoir dire la vérité ou toujours devoir mentir ?",
+        "option1": "Toujours dire la vérité",
+        "option2": "Toujours mentir"
+    },
+    {
+        "question": "Tu préfères être capable de parler à ton moi du passé ou à ton moi du futur ?",
+        "option1": "Moi du passé",
+        "option2": "Moi du futur"
+    },
+    {
+        "question": "Tu préfères avoir une baguette magique avec un seul sort ou un génie avec un seul vœu ?",
+        "option1": "Baguette magique (1 sort)",
+        "option2": "Génie (1 vœu)"
+    },
+    {
+        "question": "Tu préfères comprendre toutes les langues mais ne pas pouvoir parler ou ne comprendre qu’une langue mais parler parfaitement ?",
+        "option1": "Comprendre tout mais ne pas parler",
+        "option2": "Ne comprendre qu'une langue mais parfaitement parler"
+    }
+    
+]

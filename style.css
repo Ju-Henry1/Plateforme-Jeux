@@ -1,0 +1,132 @@
+/* 🔥 Arrière-plan animé 🔥 */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Dégradé de fond */
+    background-size: 400% 400%;
+    animation: gradientBG 6s ease infinite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+/* Animation de fond */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 🏠 Conteneur principal */
+.container-index {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* ✨ Titre principal */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* 📜 Texte */
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* 🎮 Boutons stylés */
+.buttons button {
+    background: white;
+    color: #ff758c;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Effet hover sur les boutons */
+.buttons button:hover {
+    background: #ff4586;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 📱 Responsive */
+@media (max-width: 500px) {
+    h1 { font-size: 2em; }
+    p { font-size: 1em; }
+    .buttons button { font-size: 1em; padding: 10px 15px; }
+}
+
+a {
+    text-decoration: none;
+    color: #ff4586;
+}
+
+
+/* Page Jeux */
+
+.container-jeux {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.game-card {
+    background: white;
+    color: #ff4586;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-card:hover {
+    background: #ff4586;
+    color: white;
+    transform: scale(1.05);
+}
+
+#loading, #error {
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}

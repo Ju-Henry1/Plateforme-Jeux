@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Vrai Imposteur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Le Vrai Imposteur 🎭</h1>
+
+        <!-- Etape 1: Choisir le nombre de joueurs -->
+        <div id="step-1" class="step">
+            <p>Choisis le nombre de joueurs :</p>
+            <input type="number" id="numPlayers" min="2" max="10" placeholder="Nombre de joueurs">
+            <button onclick="nextStep()">Suivant</button>
+        </div>
+
+        <!-- Etape 2: Saisie des noms des joueurs -->
+        <div id="step-2" class="step hidden">
+            <p>Entrez les noms des joueurs :</p>
+            <div id="players-inputs"></div>
+        </div>
+
+        <!-- Etape 3: Affichage des rôles -->
+        <div id="step-3" class="step hidden">
+            <p id="currentPlayerName"></p>  <!-- Nom du joueur -->
+            <p id="role"></p>  <!-- Rôle à afficher après le nom -->
+            <button onclick="nextPlayer()">Suivant</button>
+            <button onclick="stopGame()">Arrêter la partie</button>
+        </div>
+
+        <!-- Etape 4: Exclusion et gestion des joueurs -->
+        <div id="step-4" class="step hidden">
+            <h3>Joueurs restants :</h3>
+            <ul id="playersList"></ul>
+            <button onclick="selectPlayerToExclude()">Sélectionner un joueur à exclure</button>
+            <button onclick="stopGame()">Arreter la partie</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

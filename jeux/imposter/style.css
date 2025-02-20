@@ -1,0 +1,105 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Dégradé de fond */
+    background-size: 400% 400%;
+    animation: gradientBG 6s ease infinite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    margin: 0;
+}
+
+
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1em;
+    width: 60%;
+    border-radius: 5px;
+}
+
+li {
+    text-align: left;
+    margin-top: 15px;
+}
+
+button.stop {
+    background-color: #f44336;
+}
+
+button.stop:hover {
+    background-color: #e53935;
+}
+
+button.exclude {
+    background-color: #ff9800;
+}
+
+button.exclude:hover {
+    background-color: #fb8c00;
+}
+
+button.select {
+    background-color: #4caf50;
+}
+
+button.select:hover {
+    background-color: #45a049;
+}
+
+
+
+select {
+    width: 100%; /* Fait que le select prend toute la largeur disponible */
+    padding: 10px; /* Ajoute un peu d'espace à l'intérieur du select */
+    font-size: 16px; /* Augmente la taille de la police */
+    margin-bottom: 10px; /* Ajoute un petit espace sous le select */
+    border-radius: 5px; /* Arrondir les coins du select */
+    border: 1px solid #ccc; /* Ajoute une bordure douce */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
