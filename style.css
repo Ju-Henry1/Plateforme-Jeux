@@ -46,7 +46,7 @@ p {
 /* 🎮 Boutons stylés */
 .buttons button {
     background: white;
-    color: #ff758c;
+    color: #fa7c5c;
     border: none;
     padding: 12px 20px;
     font-size: 1.2em;
@@ -58,7 +58,7 @@ p {
 
 /* Effet hover sur les boutons */
 .buttons button:hover {
-    background: #ff4586;
+    background: #f46d4b;
     color: white;
     transform: scale(1.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -73,7 +73,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #ff4586;
+    color: #f46d4b;
 }
 
 
@@ -107,7 +107,7 @@ p {
 
 .game-card {
     background: white;
-    color: #ff4586;
+    color: #f46d4b;
     padding: 15px;
     border-radius: 8px;
     font-size: 1.2em;
@@ -117,7 +117,7 @@ p {
 }
 
 .game-card:hover {
-    background: #ff4586;
+    background: #f46d4b;
     color: white;
     transform: scale(1.05);
 }
