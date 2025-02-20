@@ -1,5 +1,5 @@
 // Liste des couleurs disponibles pour le jeu avec leur nom
-const colors = ["red", "blue", "green", "yellow", "purple"];
+const colors = ["red", "blue", "green", "yellow", "purple", "brown"];
 let colorSequence = []; // La séquence des couleurs à mémoriser
 let playerSequence = []; // La séquence que le joueur entre
 let currentRound = 0; // Le round actuel

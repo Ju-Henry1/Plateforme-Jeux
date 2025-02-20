@@ -18,7 +18,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     width: 90%;
-    max-width: 400px;
+    max-width: 450px;
     box-sizing: border-box;
 }
 
@@ -41,17 +41,18 @@ h1 {
 
 /* 🎨 Grille des couleurs */
 #colorBoxes {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* ✅ Ajuste les colonnes dynamiquement */
     gap: 10px;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
 }
 
-/* 📏 Ajustement dynamique des boîtes de couleur */
+/* 📏 Boutons de couleur */
 .color-box {
-    flex: 1 1 calc(33% - 20px); /* Permet 3 colonnes sur écran large */
-    max-width: 100px;
+    width: 100px;
     height: 100px;
     border-radius: 10px;
     opacity: 0.7;
@@ -108,12 +109,11 @@ button:hover {
     }
 
     #colorBoxes {
-        gap: 8px;
+        grid-template-columns: repeat(2, 1fr); /* 🔥 Passe à 2 colonnes sur mobile */
     }
 
     .color-box {
-        flex: 1 1 calc(50% - 10px); /* 🔥 Passe à 2 colonnes sur mobile */
-        max-width: 80px;
+        width: 80px;
         height: 80px;
     }
 
@@ -123,11 +123,15 @@ button:hover {
     }
 }
 
-/* 🖥 Grand écran : Ajustement à 4 colonnes */
+/* 🖥 Grand écran : Ajustement à 3-4 colonnes */
 @media (min-width: 768px) {
+    #colorBoxes {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* ✅ Répartition fluide */
+        max-width: 450px;
+    }
+
     .color-box {
-        flex: 1 1 calc(25% - 10px); /* 🔥 Passe à 4 colonnes sur grand écran */
-        max-width: 120px;
+        width: 120px;
         height: 120px;
     }
 }
