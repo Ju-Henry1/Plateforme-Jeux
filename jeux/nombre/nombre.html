@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Juste Prix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎯 Le Juste Prix</h1>
+        <p>Devinez le nombre mystère entre 1 et 100 !</p>
+
+        <input type="number" id="userGuess" placeholder="Entrez un nombre..." min="1" max="100">
+        <button id="checkGuess">Valider</button>
+        <button id="restartGame" style="display: none;">Rejouer</button>
+
+        <p id="message"></p>
+        <p>Essais restants : <span id="attempts">10</span></p>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
