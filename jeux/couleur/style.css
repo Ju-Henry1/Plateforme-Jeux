@@ -1,78 +1,100 @@
 /* 🌟 Styles généraux */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #ff9966, #ff5e62);
-    text-align: center;
-    padding: 20px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Dégradé de fond */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
+    text-align: center;
 }
 
 /* 📦 Conteneur principal */
 .container {
-    background: white;
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     width: 90%;
-    max-width: 500px;
+    max-width: 400px;
     box-sizing: border-box;
 }
 
-/* 🏆 Titre et message */
+/* 🏆 Titre et score */
 h1 {
     font-size: 2em;
-    margin-bottom: 10px;
+    color: #333;
+    margin-bottom: 15px;
 }
 
-#message {
+#score-board {
     font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+#score, #round {
     font-weight: bold;
-    margin-top: 10px;
+    color: #4CAF50;
 }
 
 /* 🎨 Grille des couleurs */
-.grid {
-    display: grid;
+#colorBoxes {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
     gap: 10px;
-    margin: 20px auto;
-    width: 100%;
-    max-width: 400px;
 }
 
-/* 📏 Taille des boutons couleur */
-.color-btn {
-    width: 100%;
-    padding-top: 100%; /* Pour un format carré */
-    border: none;
-    cursor: pointer;
+/* 📏 Ajustement dynamique des boîtes de couleur */
+.color-box {
+    flex: 1 1 calc(33% - 20px); /* Permet 3 colonnes sur écran large */
+    max-width: 100px;
+    height: 100px;
     border-radius: 10px;
-    transition: transform 0.2s;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.2s ease-in-out;
 }
 
-.color-btn:hover {
+.color-box:hover {
+    opacity: 1;
     transform: scale(1.1);
 }
 
-/* 🎮 Boutons d'actions */
+/* 🎮 Boutons */
 button {
-    background-color: #28a745;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4CAF50;
     color: white;
-    padding: 12px;
-    font-size: 1.2em;
-    border: none;
+    font-size: 16px;
     cursor: pointer;
+    border: none;
     border-radius: 5px;
-    width: 100%;
-    margin: 10px 0;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #45a049;
+}
+
+/* ℹ Messages d'état */
+#statusMessage {
+    margin-top: 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+}
+
+#statusMessage.correct {
+    color: #4CAF50; /* Vert */
+}
+
+#statusMessage.incorrect {
+    color: #F44336; /* Rouge */
 }
 
 /* 📱 MEDIA QUERIES : Adaptation Mobile */
@@ -81,23 +103,31 @@ button:hover {
         font-size: 1.5em;
     }
 
-    #message {
-        font-size: 1em;
+    .container {
+        padding: 15px;
     }
 
-    .grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur mobile */
+    #colorBoxes {
+        gap: 8px;
+    }
+
+    .color-box {
+        flex: 1 1 calc(50% - 10px); /* 🔥 Passe à 2 colonnes sur mobile */
+        max-width: 80px;
+        height: 80px;
     }
 
     button {
-        font-size: 1em;
-        padding: 10px;
+        font-size: 14px;
+        padding: 8px;
     }
 }
 
-/* 🖥️ Grand écran : 4 colonnes */
-@media (min-width: 501px) {
-    .grid {
-        grid-template-columns: repeat(4, 1fr);
+/* 🖥 Grand écran : Ajustement à 4 colonnes */
+@media (min-width: 768px) {
+    .color-box {
+        flex: 1 1 calc(25% - 10px); /* 🔥 Passe à 4 colonnes sur grand écran */
+        max-width: 120px;
+        height: 120px;
     }
 }
